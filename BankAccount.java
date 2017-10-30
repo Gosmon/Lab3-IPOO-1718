@@ -139,13 +139,13 @@ public class BankAccount {
     public double monthInterest() {
         double lucro = 0;
         if(balance < 2000.0) 
-            lucro = balance -(Math.pow(1.009,(1/12)) - 1);
+            lucro = balance - (Math.pow(1.009,(1/12)) - 1);
         else if(balance >= 2000.0 & balance < 5000.0) 
-            lucro = balance - Math.pow(1.01,(1/12)) - 1;
+            lucro = balance - (Math.pow(1.01,(1/12)) - 1);
         else if(balance>= 5000.0 & balance < 10000.0) 
-            lucro = balance - Math.pow(1.015,(1/12)) - 1;
+            lucro = balance - (Math.pow(1.015,(1/12)) - 1);
         else if(balance >= 10000.0) 
-            lucro = balance - Math.pow(1.02,(1/12)) - 1;
+            lucro = balance - (Math.pow(1.02,(1/12)) - 1);
         return lucro;
     }
 }
